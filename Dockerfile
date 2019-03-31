@@ -1,10 +1,7 @@
 FROM python:3
 
-WORKDIR /usr/src/app
+ADD my_script.py /
 
+RUN pip install pystrich
 
-RUN pip install --no-cache-dir
-
-COPY . .
-
-CMD [ "python", "./your-daemon-or-script.py" ]
+CMD [ "python", "./my_script.py" ]
