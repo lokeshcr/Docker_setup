@@ -5,6 +5,5 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile")
-    args '-u root:sudo'
   }
 }
