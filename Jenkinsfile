@@ -10,6 +10,6 @@ node{
   stage('Test image'){
     sh 'python --version'
     sh 'echo "Tests passed"'
-    sh './Docker_setup/abc.py'
+    sh './docker_setup/abc.py'
   }
 }
