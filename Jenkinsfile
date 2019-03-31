@@ -4,6 +4,6 @@ node{
     checkout scm
   }
   stage('Build image'){
-    docker.build("Dockerfile")
+    docker.build(".")
   }
 }
