@@ -4,6 +4,6 @@ node{
     checkout scm
   }
   stage('Build image'){
-    docker.build("Python")
+    docker.build("Docker_setup/Dockerfile")
   }
 }
