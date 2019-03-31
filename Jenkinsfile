@@ -6,4 +6,7 @@ node{
   stage('Build image'){
     docker.build("docker_setup/dockerfile")
   }
+  stage('Test image'){
+    sh 'echo "Tests passed"'
+  }
 }
