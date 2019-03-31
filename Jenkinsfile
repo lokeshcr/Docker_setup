@@ -5,11 +5,11 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile")
-    
+    sh './docker_setup/abc.py'
   }
   stage('Test image'){
     sh 'python --version'
     sh 'echo "Tests passed"'
-    sh './docker_setup/abc.py'
+    
   }
 }
