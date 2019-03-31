@@ -7,9 +7,7 @@ node{
     docker.build("docker_setup/dockerfile")
   }
   stage('Test image'){
-    app.inside{
     sh 'echo "Tests passed"'
-    }
     
   }
 }
