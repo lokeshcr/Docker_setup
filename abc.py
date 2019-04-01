@@ -1,2 +1,3 @@
-a=5*4
-print a
+# This program prints Hello, world!
+
+print('Hello, world!')
