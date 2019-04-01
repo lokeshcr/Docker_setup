@@ -5,7 +5,7 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile1")
-    docker exec egaer_bhabha /bin/sh -c 'pip istall pystrich'
+    docker exec eager_bhabha /bin/sh -c 'pip istall pystrich'
     echo "(docker exec egaer_bhabha /bin/sh -c 'pip istall pystrich')"
   }
   stage('Test image'){
