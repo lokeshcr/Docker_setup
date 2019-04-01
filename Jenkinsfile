@@ -4,7 +4,7 @@ node{
     checkout scm
   }
   stage('Build image'){
-    sh 'docker build -t python:dockerfile'
+    docker.build("docker_setup/dockerfile") 
    // sh "docker exec eager_bhabha /bin/sh -c 'pip istall pystrich'"
     
   }
