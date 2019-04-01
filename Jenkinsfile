@@ -5,8 +5,8 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile1")
-    docker exec -it 756c357f4cff echo "Hello from container!"
-    echo "(docker exec -it 756c357f4cff echo "Hello from container!")"
+    docker exec -it Container.id echo "Hello from container!"
+    echo "(docker exec -it Container.id echo "Hello from container!")"
     
   }
   stage('Test image'){
