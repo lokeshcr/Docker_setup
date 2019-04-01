@@ -5,7 +5,6 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile1")
-    
   }
   stage('Test image'){
     sh 'python --version'
