@@ -5,7 +5,7 @@ node{
   }
   stage('Build image'){
     docker.build("docker_setup/dockerfile1")
-    docker exec -i container-id sh -c ‘/var/lib/jenkins/workspace/Git1_master'
+    docker exec -i container-id sh -c ‘cd /var/lib/jenkins/workspace/Git1_master’
     
   }
   stage('Test image'){
