@@ -5,3 +5,5 @@ ADD abc.py /
 RUN pip install pystrich
 
 CMD [ "python", "./abc.py" ]
+
+ENTRYPOINT [ "python", "./abc.py" ]
