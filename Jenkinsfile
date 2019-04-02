@@ -5,7 +5,7 @@ node{
   }
   stage('Build image'){
     docker.build ("docker_setup/dockerfile")
-    sh "docker run -it --name python ${env.IMAGE_ID}" 
+   // sh "docker run -it --name python ${env.IMAGE_ID}" 
    // sh "docker exec eager_bhabha /bin/sh -c 'pip istall pystrich'"
     
   }
