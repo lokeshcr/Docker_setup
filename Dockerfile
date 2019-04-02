@@ -10,3 +10,5 @@ ENTRYPOINT [ "python", "./abc.py" ]
 
 CMD [ "python", "./abc.py" ]
 
+CMD "Hello Docker"
+ENTRYPOINT echo
