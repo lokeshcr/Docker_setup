@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "lokeshcr/lokesh_dockerepo"
-    registryCredential = 'dockerhub'
+    registryCredential = 'dockerhub cred'
     dockerImage = ''
   }
   agent any
