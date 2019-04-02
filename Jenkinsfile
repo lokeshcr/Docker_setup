@@ -6,7 +6,7 @@ node{
   stage('Build image'){
     def cimage = docker.build ("docker_setup/dockerfile")
     cimage.inside {
-        sh 'make test'
+        sh 'python abc.py'
     }
    // sh "docker run -it --name python ${env.IMAGE_ID}" 
    // sh "docker exec eager_bhabha /bin/sh -c 'pip istall pystrich'"
