@@ -1,9 +1,14 @@
+FROM python:3.6.1
 
-
-FROM ubuntu:16.04
 ADD abc.py /
 
-RUN apt-get install python
-RUN apt-get install pip 
+VOLUME /data
+
+RUN pip install anaconda
+
+ENTRYPOINT [ "python", "./abc.py" ]
 
 CMD [ "python", "./abc.py" ]
+
+CMD "Hello Docker"
+ENTRYPOINT echo
