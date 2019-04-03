@@ -4,7 +4,7 @@ ADD abc.py /
 
 VOLUME /data
 
-RUN pip install pystrich
+RUN pip install numpy
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
