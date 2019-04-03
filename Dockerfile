@@ -6,7 +6,7 @@ VOLUME /data
 
 RUN apt-get install python
 
-RUN apt-get install pip
+RUN apt-get install python-pip
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
