@@ -4,7 +4,9 @@ ADD abc.py /
 
 VOLUME /data
 
-RUN pip install anaconda
+RUN sudo apt-get update
+
+RUN sudo apt-get install python
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
