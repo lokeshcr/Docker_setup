@@ -1,6 +1,5 @@
-FROM python:3.6.1
-
-ADD abc.py /
+FROM python:2.7.12
+DD abc.py /
 
 VOLUME /data
 RUN pip install --upgrade pip
