@@ -16,7 +16,6 @@ node{
   }
   stage('Test image'){
     sh 'python --version'
-    sh 'python --version'
     sh 'echo "Tests passed"'
        
   }
