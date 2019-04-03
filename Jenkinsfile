@@ -5,6 +5,7 @@ node{
    // git credentialsId: '809921b7-fa12-4488-8868-986abc5e7b73', url: 'https://github.com/lokeshcr/Docker_setup.git'
   }
   stage('Build image'){
+    sh 'python --version'
     docker.build ("docker_setup/dockerfile")
     sh label: '', script: 'python abc.py'
    // cimage.inside {
