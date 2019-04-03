@@ -4,9 +4,9 @@ ADD abc.py /
 
 VOLUME /data
 
-RUN sudo apt-get update
+RUN apt-get update
 
-RUN sudo apt-get install python
+RUN apt-get install python
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
