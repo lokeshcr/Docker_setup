@@ -1,14 +1,11 @@
-FROM python:3.6.1
+
+
+FROM Ubuntu
 
 ADD abc.py /
 
-VOLUME /data
+RUN apt-get install pip 
 
-RUN pip install numpy
-
-ENTRYPOINT [ "python", "./abc.py" ]
+RUN apt-get install python
 
 CMD [ "python", "./abc.py" ]
-
-CMD "Hello Docker"
-ENTRYPOINT echo
