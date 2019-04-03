@@ -6,10 +6,7 @@ VOLUME /data
 
 RUN apt-get install python
 
-RUN apt-get install software-properties-common
-RUN apt-add-repository universe
-RUN apt-get update
-RUN apt-get install python-pip
+RUN apt-get update && apt-get install python-pip
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
