@@ -3,7 +3,7 @@ ADD abc.py /
 
 VOLUME /data
 RUN pip install --upgrade pip
-RUN pip install pystrich
+RUN pip install pandas
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
