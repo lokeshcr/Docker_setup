@@ -1,5 +1,5 @@
 FROM python:2.7.12
-DD abc.py /
+ADD abc.py /
 
 VOLUME /data
 RUN pip install --upgrade pip
