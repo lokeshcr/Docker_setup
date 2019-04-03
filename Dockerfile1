@@ -1,7 +1,8 @@
-FROM python:3
+FROM Ubuntu
 
 ADD abc.py /
 
-RUN pip install pystrich
+RUN apt-get install pip 
+RUN apt-get install python
 
 CMD [ "python", "./abc.py" ]
