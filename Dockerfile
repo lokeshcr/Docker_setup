@@ -4,9 +4,7 @@ ADD abc.py /
 
 VOLUME /data
 
-RUN apt-get install python
-
-RUN apt-get update && apt-get install python-pip
+RUN pip install numpy
 
 ENTRYPOINT [ "python", "./abc.py" ]
 
