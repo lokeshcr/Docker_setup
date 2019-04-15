@@ -1,4 +1,5 @@
-FROM ubuntu:14.04
+# FROM ubuntu:14.04
+FROM registry.access.redhat.com/rhel7/rhel
 
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
