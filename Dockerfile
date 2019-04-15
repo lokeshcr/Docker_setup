@@ -1,5 +1,5 @@
 # FROM ubuntu:14.04
-FROM python
+FROM debian
 
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
