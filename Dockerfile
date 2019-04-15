@@ -1,10 +1,10 @@
-FROM ubuntu:xenial
+FROM ubuntu
 
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
 
 # factory requirements plus a couple of useful things
-RUN apt-get update && apt-get install -y \
+// RUN apt-get update && apt-get install -y \
     autoconf \
     automake \
     binutils-dev \
