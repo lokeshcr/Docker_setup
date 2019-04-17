@@ -1,5 +1,5 @@
 # FROM ubuntu:14.04
-FROM debian
+FROM ubuntu:xenial
 
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
