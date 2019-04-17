@@ -4,7 +4,12 @@ FROM ubuntu
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
+    autoconf \
+    automake \
+    binutils-dev \
+    bison \
+    curl
 
 RUN echo "Downloading git v2.19.0. . ."
 RUN curl -o /opt/git.tar.gz -L https://github.com/git/git/archive/v2.19.0.tar.gz && \
