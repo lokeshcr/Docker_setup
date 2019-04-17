@@ -4,10 +4,8 @@ FROM ubuntu:xenial
 # silence Dialog TERM not set errors in apt-get install
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install Git v2.19.0 from the source
-# This version was chosen because its the latest stable version as of
-# September 25, 2018. And we want to make sure that Git operations such as
-# patch creation are done from the same revision always
+RUN apt-get update && apt-get install -y
+
 RUN echo "Downloading git v2.19.0. . ." && \
     APT-GET -o /opt/git.tar.gz -L https://github.com/git/git/archive/v2.19.0.tar.gz && \
     tar -zxf /opt/git.tar.gz -C /opt/ && \
