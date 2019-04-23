@@ -6,7 +6,7 @@ node{
   }
   stage('Build image'){
    docker.build ("docker_setup/dockerfile")
-   sh label: '', script: 'python abc.py' >> abc.txt
+   sh label: '', script: 'python abc.py' 
    // cimage.inside {
      //   sh 'python abc.py'
    // }
