@@ -1,7 +1,7 @@
-import os
+#import os
 #from requests.auth import HTTPBasicAuth
-from git import Repo
-#from github import Github
+#from git import Repo
+from github import Github
 
 a="Hello World"
 print a
