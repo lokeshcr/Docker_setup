@@ -85,4 +85,4 @@ RUN echo "Downloading git v2.19.0. . ." && \
     make all && \
     make install && \
 git --version
-ADD my_script.py \
+ADD my_script.py /
