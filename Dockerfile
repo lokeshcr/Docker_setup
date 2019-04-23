@@ -2,7 +2,7 @@ FROM python:latest
 
 WORKDIR /usr/local/bin
 
-COPY abc.py .
+COPY loky.py .
 
-CMD ["abc.py"]
+CMD ["loky.py"]
 
