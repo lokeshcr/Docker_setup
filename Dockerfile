@@ -2,7 +2,7 @@ FROM python:latest
 
 RUN apt-get update && apt-get install -y python-pip 
 
-RUN apt-get install Github
+RUN apt-get install github
 
 WORKDIR /usr/local/bin
 
